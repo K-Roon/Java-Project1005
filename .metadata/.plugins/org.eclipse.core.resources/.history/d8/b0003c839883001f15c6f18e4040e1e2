@@ -1,0 +1,10 @@
+package work_1006_01;
+
+public class fibonacci_numbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

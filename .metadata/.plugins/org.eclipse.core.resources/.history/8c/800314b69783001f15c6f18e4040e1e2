@@ -1,0 +1,27 @@
+package work_1006_01;
+
+public class numeral {
+	public static void main(String[] args) {
+		// 진법변환
+		// 10진수 10을 2진수로 변환
+		// 배열
+		int a = 10;
+		int b = 2;
+		int mok, nmg;
+		int res[] = new int[10];
+		int i = 0;
+		
+		for (;;) {
+			mok=a/b;
+			nmg=a%b;
+			a = mok;
+			res[i] = nmg;
+			i++;
+			if(mok==0) break;
+		}
+		
+		for (int j = i-1; j < i; j--) {
+			System.out.print(res[j]);
+		}
+	}
+}

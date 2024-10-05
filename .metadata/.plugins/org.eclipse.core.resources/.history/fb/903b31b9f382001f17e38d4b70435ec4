@@ -1,0 +1,27 @@
+package work;
+
+import java.util.Scanner;
+
+public class work_02 {
+
+	public static void main(String[] args) {
+		int a=10;
+		int b=a+10;
+		System.out.println(a);
+		System.out.println(b);
+		
+		System.out.println();
+		
+		int age = 10;
+		int height = 150;
+		boolean parent = true;
+		boolean heartDease=true;
+		boolean take;
+		
+		take = age>=6&&height>=120&&heartDease==false;
+		System.out.println(take);
+		
+		Scanner sc = new Scanner("");
+	}
+
+}

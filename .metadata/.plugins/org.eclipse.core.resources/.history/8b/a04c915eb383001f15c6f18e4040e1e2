@@ -1,0 +1,38 @@
+package work_1006_01;
+
+public class CarMain {
+
+	public static void main(String[] args) {
+		// 1. 클래스명 변수명(객체): 객체 선언
+		// 변수명(객체명) = new 클래스명(); 초기화
+		// 2. 클래스명 변수명(객체) = new 클래스명();
+		// Scanner scan = new Scanner(System.in);
+		// int n = scan.nextInt();
+		Car tico = new Car(); // tico 객체 생성
+		Car pride = new Car(); // pride 객체 생성
+		
+		//tico.color = "화이트";
+		tico.company = "대우";
+		tico.type = "경차";
+		
+		pride.color = "블랙";
+		pride.company="기아";
+		pride.type="소형";
+		
+		System.out.println(tico.color);
+		System.out.println(tico.company);
+		System.out.println(tico.type);
+		System.out.println(pride.color);
+		System.out.println(pride.company);
+		System.out.println(pride.type);
+		
+		tico.go();
+		tico.back();
+		pride.go();
+		pride.back();
+		
+		System.out.println(tico.color);
+		
+	}
+
+}

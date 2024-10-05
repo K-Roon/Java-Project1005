@@ -1,0 +1,22 @@
+package work;
+
+import java.util.Scanner;
+
+public class work_02 {
+
+	public static void main(String[] args) {
+		
+		int age = 10;
+		int height = 150;
+		boolean parent = true;
+		boolean heartDease=true;
+		boolean take;
+		
+		take = (age>=6&&height>=120&&heartDease==false) || (height>=120 && parent == true);
+		
+		System.out.println(take);
+		
+		Scanner sc = new Scanner("");
+	}
+
+}
