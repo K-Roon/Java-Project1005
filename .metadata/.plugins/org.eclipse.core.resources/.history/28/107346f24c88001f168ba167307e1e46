@@ -1,0 +1,29 @@
+package work_1012_01;
+
+public class work_02 {
+
+	public static void main(String[] args) {
+		// 100~500사이 자연수 중
+		// 홀수의 합
+		// 짝수의 합
+		// 10의 배수의 합
+		
+		int odd = 0, twin = 0, ten = 0;
+		for (int i = 100; i <= 500; i++) {
+			if(i%2==1) {
+				odd += i;
+			}
+			if(i%2==0) {
+				twin += i;
+			}
+			if(i%10==0) {
+				ten += i;
+			}
+		}
+		System.out.println("홀수의 합: "+odd);
+		System.out.println("짝수의 합: "+twin);
+		System.out.println("10의 배수의 합: "+ten);
+
+	}
+
+}
