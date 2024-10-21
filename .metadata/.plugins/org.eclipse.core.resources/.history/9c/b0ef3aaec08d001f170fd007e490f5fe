@@ -1,0 +1,16 @@
+package work_1019_01;
+
+public class work_05 {
+
+	public static void main(String[] args) {
+		
+		int[][] a = new int [5][5];
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < i; j++) {
+				a[i][j] = i;
+				System.out.printf("%3d", i);
+			}
+		}
+	}
+
+}

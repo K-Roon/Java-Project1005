@@ -1,0 +1,9 @@
+package work_1019_01;
+
+public class testing {
+public static void main(String[] args) {
+	String str = "ITISTESTSTRING";
+    String[] result = str.split("T");
+    System.out.print(result[3]);
+}
+}

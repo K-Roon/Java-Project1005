@@ -3,26 +3,22 @@ package work_1012_01;
 public class work_02 {
 
 	public static void main(String[] args) {
-		// 100~500사이 자연수 중
+		// 100~500사이 자연수 중 
 		// 홀수의 합
 		// 짝수의 합
-		// 10의 배수의 합
-		
-		int odd = 0, twin = 0, ten = 0;
-		for (int i = 100; i <= 500; i++) {
-			if(i%2==1) {
-				odd += i;
-			}
-			if(i%2==0) {
-				twin += i;
-			}
-			if(i%10==0) {
-				ten += i;
-			}
+		// 10의 배수의 합	
+		int sum1=0,sum2=0,sum3=0;
+		for(int i=100;i<=500;i++) {   // i++ = i=i+1 = i+=1
+			if(i%2==1) sum1+=i; // 홀수의 합
+			if(i%2!=1) sum2+=i; // 짝수의 합
+//			if(i%2==0) sum2+=i; // 짝수의 합
 		}
-		System.out.println("홀수의 합: "+odd);
-		System.out.println("짝수의 합: "+twin);
-		System.out.println("10의 배수의 합: "+ten);
+		for(int i=100;i<=500;i+=10) {
+			sum3+=i;  
+		}
+		System.out.printf("홀수의 합:%d \n", sum1);
+		System.out.printf("짝수의 합:%d \n", sum2);
+		System.out.printf("10의 배수의 합:%d \n", sum3);
 
 	}
 
